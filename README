@@ -1,0 +1,131 @@
+## ABOUT THE CODE
+
+This code is a Computer Graphics II class assignment of the second semester of
+2011 of PUCRS university.
+
+The assignment was to code a 3D game using OpenGL library which objective is to
+collect points.
+
+In the environment we may have different kind of objects, which may be
+collected or fixed.
+
+The ones that may be collected should disappear from the game and increment one
+point in the score board when the player move over them. The fixed ones should
+block the player's movement.
+
+The second part of the assignment was to build the environment from a config
+script.
+
+All the objects should be drawn from a model in OBJ format.
+
+## HOW TO PLAY
+
+To run the game you have to pass a file script by the standard input, a sample
+config file is provided with the code.
+
+	Example:
+
+	$ ./cgii < CoolGame.cfg
+
+- Keyboard Controls
+	w - move Forward
+	s - move backwards
+	a - move left
+	d - move right
+	r - reset game
+	m - turn on/off mini-map
+
+- Mouse Controls
+	- pressed left button + movement - rotate camera
+
+## CONFIG SCRIPT FORMAT
+
+The config script contains the player's initial position, the fixed objects
+positions and the obj file path to each fixed object and to the objects that may
+be collected.
+
+- Player position:
+	Keyword 'Avatar' followed by its (x,y,z) coordinates:
+
+	Example:
+
+	Avatar 0,0,0 
+
+- Fixed Objects:
+	Keyword 'Fixos' followed by how many fixed objects will be loaded.
+	For each object we have a line with the path to the obj file and a line to its
+	(x,y,z) position in the environment.
+
+	Example:
+
+	Fixos 2
+	commode_nightstand1.obj
+	10,0,25
+	commode_nightstand1.obj
+	35,0,1
+
+- Objects that may be collected:
+	Keyword "Premios" followed by how many objects should appear on the
+	environment and the obj file path to that object.
+
+	Example:
+
+	Premios 10
+	fuse.obj
+
+The final config script should look like this:
+
+	Avatar 0,0,0 
+
+	Fixos 2
+	commode_nightstand1.obj
+	10,0,25
+	commode_nightstand1.obj
+	35,0,1
+	
+	Premios 10
+	fuse.obj
+
+## COMPILATION
+
+This code uses OpenGL and GLUT, you must have the library that implements them on your machine.
+
+To compile just run the make utility in the code directory:
+
+	$ make
+
+## GAME FEATURES
+
+- Player may move on diagonals
+- Illumination
+- Mini Map
+
+## OBS
+
+- We never use the y coordinate given in the script. The player and all objects are in the ground height.
+- If the user passes a tall object in the script file, we scale them to a maximum height.
+- We randomly place the objects that may be collected.
+- The environment size adjusts itself with the coordinates of the fixed elements given in the config script.
+
+## BUGS
+
+- If the obj model is not modeled with its center in the space's origin, our collision test might fail.
+- If the avatar coordinate is over a fixed object in the config script the player will never move.
+
+## Credits
+
+- The assignment was coded by Bruney Narciso da Silva and Rodrigo Chamun both
+students of Computer Science from PUCRS.
+
+- The obj.{h,c} and draw.{h,c} files were taken from
+<http://godard.b.free.fr/dotclear/index.php?2006/07/02/8-model-viewer-for-wavefront-obj-3d-models>.
+
+- The fuse.obj and fuse.mtl file were taken from the same url above.
+
+- The commode_nightstand1.obj and commode_nightstand1.mtl files were taken from
+<http://telias.free.fr/models_wavefront_menu.html>.
+
+## CONTACT
+
+- EMAIL:
+	rochamun@gmail.com

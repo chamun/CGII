@@ -1,0 +1,166 @@
+# Blender MTL File: fuse.blend
+# Material Count: 14
+newmtl Material.008
+Ns 96.0
+Ka 0.0 0.0 0.0
+Kd 0.64 0.64 0.64
+Ks 0.5 0.5 0.5
+Ni 1.0
+d 1.0
+illum 2
+
+
+newmtl Material.001
+Ns 96.0
+Ka 0.0 0.0 0.0
+Kd 0.8 0.646939 0.0
+Ks 0.5 0.5 0.5
+Ni 1.0
+d 1.0
+illum 2
+
+
+newmtl Material.006
+Ns 96.0
+Ka 0.0 0.0 0.0
+Kd 0.0 0.025955 0.0
+Ks 0.5 0.5 0.5
+Ni 1.0
+d 1.0
+illum 2
+
+
+newmtl Material.013
+Ns 96.0
+Ka 0.0 0.0 0.0
+Kd 0.8 0.64 0.0
+Ks 0.5 0.5 0.5
+Ni 1.0
+d 1.0
+illum 2
+
+
+newmtl Material.014
+Ns 96.0
+Ka 0.0 0.0 0.0
+Kd 0.8 0.64 0.0
+Ks 0.5 0.5 0.5
+Ni 1.0
+d 1.0
+illum 2
+
+
+newmtl Material.002
+Ns 96.0
+Ka 0.0 0.0 0.0
+Kd 0.8 0.8 0.8
+Ks 0.5 0.5 0.5
+Ni 1.0
+d 1.0
+illum 2
+
+
+newmtl Material.009
+Ns 96.0
+Ka 0.0 0.0 0.0
+Kd 0.64 0.64 0.64
+Ks 0.5 0.5 0.5
+Ni 1.0
+d 1.0
+illum 2
+
+
+newmtl Material.007
+Ns 96.0
+Ka 0.0 0.0 0.0
+Kd 0.8 0.8 0.8
+Ks 0.5 0.5 0.5
+Ni 1.0
+d 1.0
+illum 2
+map_Kd fuse_solar_panel.png
+
+
+newmtl Material.010
+Ns 96.0
+Ka 0.0 0.0 0.0
+Kd 0.64 0.64 0.64
+Ks 0.5 0.5 0.5
+Ni 1.0
+d 1.0
+illum 2
+
+
+newmtl Material
+Ns 96.0
+Ka 0.0 0.0 0.0
+Kd 0.0 0.0 0.368321
+Ks 0.433298 0.442839 0.53753
+Ni 1.0
+d 1.0
+illum 2
+
+
+newmtl Material.003
+Ns 96.0
+Ka 0.0 0.0 0.0
+Kd 0.8 0.8 0.8
+Ks 0.5 0.5 0.5
+Ni 1.0
+d 1.0
+illum 2
+
+
+newmtl Material.004
+Ns 96.0
+Ka 0.0 0.0 0.0
+Kd 0.8 0.8 0.8
+Ks 0.5 0.5 0.5
+Ni 1.0
+d 1.0
+illum 2
+map_Kd fuse_radiator.png
+
+
+newmtl Material.012
+Ns 96.0
+Ka 0.0 0.0 0.0
+Kd 0.8 0.60874 0.0
+Ks 0.5 0.5 0.5
+Ni 1.0
+d 1.0
+illum 2
+
+
+newmtl Material.005
+Ns 96.0
+Ka 0.0 0.0 0.0
+Kd 0.8 0.64 0.0
+Ks 0.5 0.5 0.5
+Ni 1.0
+d 1.0
+illum 2
+
+# TEST
+newmtl Material.test
+Ns 96.0
+Ka 0.0 0.0 0.0
+Kd 0.8 0.8 0.8
+Ks 0.5 0.5 0.5
+Ni 1.0
+d 1.0
+illum 2
+map_Kd fuse_radiator.png
+
+
+# test test
+
+newmtl TEST
+Ns 100.0
+Ka 0.1 0.2 0.3
+Kd 0.8 0.8 0.8
+Ks 0.5122 0.5133 0.5555
+Ni 2.0
+d 0.1
+illum 1
+map_Kd fuse_solar_panel.png
